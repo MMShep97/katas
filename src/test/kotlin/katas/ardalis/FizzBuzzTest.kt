@@ -13,26 +13,26 @@ class FizzBuzzTest {
     @Test
     fun `should print out numbers when not divisible by 3 OR 5, separated by newlines`() {
         val input = 1
-        val actual = FizzBuzzKata.fizzBuzz(input)
+        val actual = FizzBuzz.fizzBuzz(input)
 
         assertEquals(input.toString(), actual)
     }
 
     @Test
     fun `should output Fizz when divisible by 3`() {
-        val actual = FizzBuzzKata.fizzBuzz(3)
+        val actual = FizzBuzz.fizzBuzz(3)
         assertEquals("Fizz", actual)
     }
 
     @Test
     fun `should output Buzz when divisible by 5`() {
-        val actual = FizzBuzzKata.fizzBuzz(5)
+        val actual = FizzBuzz.fizzBuzz(5)
         assertEquals("Buzz", actual)
     }
 
     @Test
     fun `should output FizzBuzz when divisible by 5 AND 3`() {
-        val actual = FizzBuzzKata.fizzBuzz(15)
+        val actual = FizzBuzz.fizzBuzz(15)
         assertEquals("FizzBuzz", actual)
     }
 
@@ -60,7 +60,7 @@ class FizzBuzzTest {
         for (inputToOutputPair in inputToOutputPairs) {
             val input = inputToOutputPair.first
             val output = inputToOutputPair.second
-            val actual = FizzBuzzKata.fizzBuzz(input)
+            val actual = FizzBuzz.fizzBuzz(input)
             assertEquals(output, actual)
         }
     }
